@@ -10,7 +10,9 @@ var EmployeeModel = {
   first: '',
   last: '',
   email: function() {
-    return 'email-' + this.sequence + '@bocoup.com';
+    return this.item.first.toLowerCase() +
+      this.item.last.toLowerCase() +
+      '@business.com';
   },
   email_personal: function() {
     return 'email-' + this.sequence + '@example.com';
@@ -34,18 +36,55 @@ var EmployeeModel = {
 
 var factory = new Factory(EmployeeModel);
 
-factory.create({
-  first: 'Sylvia',
-  last: 'Plath'
-});
-
-factory.create({
-  first: 'Paul',
-  last: 'Revere'
-});
-
 try {
-  assert.deepEqual(factory.created, expected);
+  assert.deepEqual(
+    factory.create({
+      first: 'Sylvia',
+      last: 'Plath'
+    }),
+    expected[0],
+    'Single creation #1'
+  );
+
+  assert.deepEqual(
+    factory.create({
+      first: 'Paul',
+      last: 'Revere'
+    }),
+    expected[1],
+    'Single creation #2'
+  );
+
+  assert.deepEqual(
+    factory.created,
+    expected,
+    'factory.created stores the results'
+  );
+
+  // Reinstatiate factory
+  factory = new Factory(EmployeeModel);
+
+  assert.deepEqual(
+    factory.create([
+      {
+        first: 'Sylvia',
+        last: 'Plath'
+      },
+      {
+        first: 'Paul',
+        last: 'Revere'
+      }
+    ]),
+    expected,
+    'create many from an array'
+  );
+
+  assert.deepEqual(
+    factory.created,
+    expected,
+    'factory.created stores the results'
+  );
+
   console.log('Passed!');
 } catch(e) {
   console.error('Failed', e);
