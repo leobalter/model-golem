@@ -1,0 +1,42 @@
+module.exports = [
+  {
+    first: 'Sylvia',
+    last: 'Plath',
+    id: 0,
+    email: 'email-0@bocoup.com',
+    email_personal: 'email-0@example.com',
+    supporter_id: 1,
+    date_start: '2014-01-01',
+    date_end: '2014-02-01',
+    github_user: 'github-0',
+    position_id: 1,
+    is_billable: true,
+    phone: 'phone',
+    irc: 'irc',
+    twitter: 'twitter',
+    website: 'website',
+    slug: 'slug',
+    notes: 'notes',
+    meta: {}
+  },
+  {
+    first: 'Paul',
+    last: 'Revere',
+    id: 1,
+    email: 'email-1@bocoup.com',
+    email_personal: 'email-1@example.com',
+    supporter_id: 1,
+    date_start: '2014-01-01',
+    date_end: '2014-02-01',
+    github_user: 'github-1',
+    position_id: 1,
+    is_billable: true,
+    phone: 'phone',
+    irc: 'irc',
+    twitter: 'twitter',
+    website: 'website',
+    slug: 'slug',
+    notes: 'notes',
+    meta: {}
+  }
+];

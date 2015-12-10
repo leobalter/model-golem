@@ -1,0 +1,22 @@
+{
+  "name": "yet-another-model-factory-library",
+  "version": "1.0.0",
+  "description": "A model factory JS library",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leobalter/yet-another-model-factory-library.git"
+  },
+  "scripts": {
+    "test": "node tests/employee-model.js"
+  },
+  "keywords": [
+    "model",
+    "factory"
+  ],
+  "author": "Leo Balter",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
