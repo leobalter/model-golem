@@ -38,7 +38,7 @@ var Person = {
 
   // Reuse attributes
   username: function() {
-    return this.name.toLowerCase().replace(/ /g, '');
+    return this.item.name.toLowerCase().replace(/ /g, '');
   }
 };
 ```
