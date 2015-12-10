@@ -3,7 +3,7 @@ var _ = require('lodash');
 function Factory(model) {
   this.id = -1;
   this.model = model;
-  this.created = [];
+  this.store = [];
   this.sequence = 0;
 }
 
@@ -19,7 +19,7 @@ Factory.prototype = {
 
     var merged = _.assign({}, item, this.model, this.mergeResolver.bind(this));
 
-    this.created.push(merged);
+    this.store.push(merged);
 
     this.sequence++;
 

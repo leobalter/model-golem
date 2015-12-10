@@ -56,9 +56,9 @@ try {
   );
 
   assert.deepEqual(
-    factory.created,
+    factory.store,
     expected,
-    'factory.created stores the results'
+    'factory.store stores the results'
   );
 
   // Reinstatiate factory
@@ -80,9 +80,9 @@ try {
   );
 
   assert.deepEqual(
-    factory.created,
+    factory.store,
     expected,
-    'factory.created stores the results'
+    'factory.store stores the results'
   );
 
   console.log('Passed!');
