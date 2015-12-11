@@ -1,11 +1,11 @@
 {
-  "name": "yet-another-model-factory-library",
+  "name": "model-golem",
   "version": "1.0.1",
-  "description": "A model factory JS library",
+  "description": "A model factory JS library to generate data mocks",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/leobalter/yet-another-model-factory-library.git"
+    "url": "git://github.com/leobalter/model-golem.git"
   },
   "scripts": {
     "test": "node tests/employee-model.js"

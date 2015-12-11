@@ -1,6 +1,6 @@
-# yet-another-model-factory-library
+# model-golem
 
-*Create easy model based mocks*
+A model factory JS library to generate data mocks
 
 ---
 
