@@ -7,7 +7,7 @@ A model factory JS library to generate data mocks
 ## Installing
 
 ```
-npm install --save-dev yet-another-model-factory-library
+npm install --save-dev model-golem
 ```
 
 ## Using
@@ -16,10 +16,10 @@ Load the Factory:
 
 ```js
 // NodeJS / CommonJS Modules
-var Factory = require('yet-another-model-factory-library');
+var Factory = require('model-golem');
 
 // ES2015 Modules
-import Factory from 'yet-another-model-factory-library';
+import Factory from 'model-golem';
 ```
 
 Define a model:
